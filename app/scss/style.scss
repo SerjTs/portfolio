@@ -230,6 +230,32 @@
   }
 }
 
+// --- Обо мне --- 
+.about {
+  &__title {
+    color: $dark;
+    margin-bottom: 50px;
+  }
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+  }
+  &__text-box {
+    max-width: 520px;
+    margin-right: 30px;
+  }
+  &__text {
+    color: $dark;
+    margin-bottom: 15px;
+  }
+  &__img {
+    display: inline-block;
+    max-width: 507px;
+  }
+}
+
+
 
 
 
