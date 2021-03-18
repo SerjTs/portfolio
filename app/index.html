@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,11 +9,153 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
-<body>
-  
-  <!-- <div class="link-btn">Заказать</div> -->
 
-  
+<body>
+
+<!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="header__wripper">
+        <div class="header__logo">
+          <img src="images/logo.svg" alt="логотип" class="header__logo-img">
+          <div class="header__logo-content">
+            <h2 class="header__logo-subtitle">
+              site-master
+            </h2>
+            <h1 class="header__logo-title">
+              Front-End разработка
+            </h1>
+          </div>
+        </div>
+        <nav class="header__menu">
+          <ul class="header__menu-list">
+            <li class="header__menu-item">
+              <a href="#" class="header__menu-link">
+                Преимущества
+              </a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#" class="header__menu-link">
+                Обо мне
+              </a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#" class="header__menu-link">
+                Мои работы
+              </a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#" class="header__menu-link">
+                Отзывы
+              </a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#" class="header__menu-link">
+                Контакты
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+<!-- Топ. Титульный блок -->
+    <section class="top">
+      <div class="container">
+        <div class="top__wrapper">
+          <!-- <img src="images/clock.svg" alt="декорация часы" class="top__clock"> -->
+          <div class="clock">
+            <div class="clock__hour">
+              <div class="clock__hr" id="hr"></div>
+            </div>
+            <div class="clock__min">
+              <div class="clock__mn" id="mn"></div>
+            </div>
+            <div class="clock__sec">
+              <div class="clock__sc" id="sc"></div>
+            </div>
+          </div>
+          <a href="#" class="top__link link-btn">Сделать заказ</a>
+        </div>
+      </div>
+    </section>
+
+<!-- Преимущества -->
+    <section class="advantages">
+      <div class="container">
+        <h2 class="advantages__title">
+          Преимущества
+        </h2>
+        <div class="advantages__items">
+          <div class="advantages__item">
+            <img src="images/css.svg" alt="иконка" class="advantages__item-img advantages__item-img--41">
+            <h3 class="advantages__item-title">
+              Современные<br>технологии
+            </h3>
+            <p class="advantages__item-text">
+              При верстке использую HTML5, эффекты создаю при помощи CSS3, а динамику сайту придаю с помощью JS и
+              jQuery.
+            </p>
+          </div>
+          <div class="advantages__item">
+            <img src="images/multiscreen.svg" alt="иконка" class="advantages__item-img">
+            <h3 class="advantages__item-title">
+              Чистый код<br>и адаптив
+            </h3>
+            <p class="advantages__item-text">
+              Отформатированный легко читаемый HTML код без всего лишнего, c понятными названиями классов по БЭМ.
+            </p>
+          </div>
+          <div class="advantages__item">
+            <img src="images/browsers.svg" alt="иконка" class="advantages__item-img">
+            <h3 class="advantages__item-title">
+              Кроссбраузерность
+            </h3>
+            <p class="advantages__item-text">
+              Ваш сайт будет одинаково хорошо отображаться во всех популярных браузерах без перебоев в функционировании
+              и ошибок в верстке.
+            </p>
+          </div>
+          <div class="advantages__item">
+            <img src="images/money.svg" alt="иконка" class="advantages__item-img">
+            <h3 class="advantages__item-title">
+              Актуальная<br>цена
+            </h3>
+            <p class="advantages__item-text">
+              Я беру за мои услуги столько, сколько они действительно стоят. Ничего лишнего. 100% отработка ваших денег
+            </p>
+          </div>
+          <div class="advantages__item">
+            <img src="images/fast-time.svg" alt="иконка" class="advantages__item-img">
+            <h3 class="advantages__item-title">
+              Кратчайшие<br>cроки
+            </h3>
+            <p class="advantages__item-text">
+              Предлагаю вам создание сайта любой сложности в самые сжатые сроки, без потери качества выполнения работы.
+            </p>
+          </div>
+          <div class="advantages__item">
+            <img src="images/money.svg" alt="иконка" class="advantages__item-img">
+            <h3 class="advantages__item-title">
+              Обслуживание<br>и
+              поддержка
+            </h3>
+            <p class="advantages__item-text">
+              Быстро устраню любую проблему на вашем сайте. Я практически всегда на связи и никуда не пропадаю.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+  </main>
+
+
   <script src="js/main.min.js"></script>
 </body>
+
 </html>
