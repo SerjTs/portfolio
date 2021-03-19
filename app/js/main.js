@@ -15,7 +15,14 @@ $(function() {
     sc.style.transform = `rotateZ(${ss}deg)`;
   });
 
-
+  $('.works__slider').slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    dots: false,
+    speed: 300,
+    arrows: false
+  });
 
 });
 
