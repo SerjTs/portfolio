@@ -279,6 +279,88 @@
   }
 }
 
+// --- Отзывы ---
+.feedbacks {
+  &__title {
+    color: $dark;
+  }
+  &__slider {
+  }
+  &__slide {
+    padding: 0 20px;
+  }
+  &__slide-box {
+    background-color: #fff;
+    width: 270px;
+    margin: 0 auto;
+    padding: 5px 10px;
+  }
+  &__slide-title {
+    color: $dark;
+    padding-top: 10px;
+    padding-left: 40px;
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 45px;
+      height: 45px;
+      background-image: url(../images/feedbacks_1.jpg);
+    }
+  }
+  &__slide-text {
+    color: $dark;
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+  &__slide-author-link {
+    font-size: 15px;
+    display: block;
+    text-align: center;
+    font-weight: 500;
+  }
+}
+
+// --- Footer ---
+.footer {
+  background-image: url('../images/section_bg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 60px 0 40px;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__copy {
+  }
+  &__email {
+    color: $light;
+    position: relative;
+    padding-left: 28px;
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 19px;
+      height: 19px;
+      background-image: url(../images/email.svg);
+    }
+  }
+  &__link-btn {
+    color: $light;
+    display: flex;
+    align-items: center;
+    & img {
+      display: inline-block;
+      width: 20px;
+      margin-left: 10px;
+    }
+  }
+}
 
 
 
