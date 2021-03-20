@@ -21,7 +21,21 @@ $(function() {
     slidesToScroll: 1,
     dots: false,
     speed: 300,
-    arrows: false
+    arrows: false,
+    responsive: [
+      {
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+        }
+      },
+    ]
   });
 
   $('.feedbacks__slider').slick({
@@ -30,7 +44,26 @@ $(function() {
     slidesToScroll: 1,
     dots: false,
     speed: 300,
-    arrows: false
+    arrows: false,
+    responsive: [
+      {
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+        }
+      },
+    ]
+  });
+
+  $('.header__menu-btn').on('click', function () {
+    $('.header__menu-btn').toggleClass('header__menu-btn--active');
+    $('.header__menu-list').toggleClass('header__menu-list--active');
   });
 
 });

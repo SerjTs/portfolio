@@ -19,8 +19,9 @@
   }
   &__logo {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
+    width: 340px;
   }
   &__logo-img {
     width: 54px;
@@ -41,16 +42,72 @@
     margin: 0;
     font-size: 22px;
     text-transform: uppercase;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
   &__menu {
+    width: 63%;
   }
+  &__menu-btn {
+    display: none;
+    width: 40px;
+    height: 36px;
+    border: none;
+    margin-top: 8px;
+    background-color: transparent;
+    // display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 0;
+    outline: none;
+    cursor: pointer;
+    span {
+      display: block;
+      width: 100%;
+      height: 4px;
+      background-color: $light;
+      transition: opacity .5s; 
+    }
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 4px;
+      left: 0;
+      background-color: $light;
+      transition: transform .3s; 
+      }
+      &::before {
+        top: 0;
+      }
+      &::after {
+        bottom: 0;
+      }
+    }
+    &__menu-btn--active {
+      span {
+        opacity: 0;
+        transition: opacity 0s;
+      }
+      &::before {
+        transform: translateY(16px) rotate(135deg);
+      }
+      &::after {
+        transform: translateY(-16px) rotate(-135deg);
+      }
+    }  
+
+
+
   &__menu-list {
     display: flex;
+    justify-content: space-around;
     border-bottom: 2px solid #fff;
   }
   &__menu-item {
-    padding: 30px;
+    // padding: 30px;
+    padding-top: 30px;
     padding-bottom: 20px;
     margin-top: -14px;
     transition: .2s;
@@ -101,8 +158,7 @@
     }
   }
 }
-.clock
-{
+.clock {
   transform: translateY(60px);
   width:100px;
   height: 100px;
@@ -433,8 +489,6 @@
     font-size: 17px;
   }
 }
-
-
 
 
 @import 'media';
