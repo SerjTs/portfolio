@@ -78,7 +78,7 @@
               <div class="clock__sc" id="sc"></div>
             </div>
           </div>
-          <a href="#" class="top__link link-btn">Сделать заказ</a>
+          <a class="top__link link-btn" data-remodal-target="modal">Сделать заказ</a>
         </div>
       </div>
     </section>
@@ -161,7 +161,7 @@
           <div class="about__text-box">
             <p class="about__text">
               Я занимаюсь веб-разработкой с 2019 года. Основная деятельность &ndash; адаптивная кроссбраузерная вёрстка
-              сайтов-визиток (лендингов), корпоративных сайтов, интернет-магазинов. Пишу валидный код только вручную. Не
+              сайтов-визиток, лендингов, корпоративных сайтов, интернет-магазинов. Пишу валидный код только вручную. Не
               использую никаких громоздких и неповоротливых конструкторов.
             </p>
             <p class="about__text">
@@ -203,8 +203,8 @@
             </a>
           </div>
         </div>
-        <div class="works__btn-wrapper">
-          <a href="#" class="works__link-order link-btn">Сделать заказ</a>
+        <div class="works__btn-wrapper" data-remodal-target="modal">
+          <a class="works__link-order link-btn">Сделать заказ</a>
         </div>
       </div>
     </section>
@@ -270,6 +270,24 @@
         </div>
       </div>
     </section>
+
+    <div class="modal remodal" data-remodal-id="modal">
+      <div class="modal__wrapper">
+        <button data-remodal-action="close" class="modal__close remodal-close"></button>
+        <img class="logo-img" src="images/logo.svg" alt="логотип">
+        <form action="#" class="modal__form">
+          <h4 class="modal__title">
+            Оставьте ваши контакты и&nbsp;я&nbsp;отвечу вам
+          </h4>
+          <input class="modal__input" type="text" name="name" placeholder="Ваше имя" required>
+          <input class="modal__input" type="email" name="email" placeholder="Ваш e-mail" required>
+          <input class="modal__input" type="tel" name="phone" placeholder="Номер телефона" required>
+          <input class="modal__submit link-btn" type="submit" value="ОТПРАВИТЬ">
+        </form>
+      </div>
+    </div>
+
+
   </main>
 
   <!-- Footer -->
@@ -279,8 +297,8 @@
         <p class="footer__copy">
           &copy; 2021 Фрилансер веб-разработчик Сергей Ц.
         </p>
-        <a href="mailto:admin@site-master.xyz" class="footer__email">admin@site-master.xyz</a>
-        <a href="#" class="footer__link-btn">
+        <a href="mailto:mail@site-master.xyz" class="footer__email">mail@site-master.xyz</a>
+        <a class="footer__link-btn" data-remodal-target="modal">
           Остались вопросы?
           <img src="images/question.svg" alt="">
         </a>
