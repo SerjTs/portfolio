@@ -135,6 +135,11 @@
       max-width: 100%;
     }
   }
+  .works {
+    &__slider {
+      margin: 0 0 40px;
+    }
+  }
   .feedbacks__slide {
     padding: 0;
   }

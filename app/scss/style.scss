@@ -141,9 +141,13 @@
   background-size: cover;
   margin-top: 30px;
   padding: 0;
+  &__header {
+    display: none;
+  }
   &__wrapper {
     height: 100vh;
     height: calc(100vh - 30px);
+    min-height: 350px;
     width: 100%;
     padding: 20px;
     display: flex;
@@ -319,12 +323,15 @@
   }
   &__slider {
     margin-bottom: 40px;
+    margin-left: 60px;
+    margin-right: 60px;
   }
   &__slide {
   }
   &__slide-link {
     display: flex;
     justify-content: center;
+    outline: none;
   }
   &__slide-link img {
   }
@@ -335,6 +342,24 @@
   }
   &__link-order {
     background-color: #fff;
+  }
+  & .slick-arrow {
+    background: none;
+    position: absolute;
+    top: 161px;
+    z-index: 5;
+    border: none;
+    transition: .3s;
+    cursor: pointer;
+    &:active {
+      top: 163px;
+    }
+  }
+  & .slick-prev {
+    left: -60px;
+  }
+  & .slick-next {
+    right: -60px;
   }
 }
 
@@ -472,6 +497,9 @@
     max-width: 300px;
     color: $light;
   }
+  &__title-send {
+    display: none;
+  }
   &__input,
   &__textarea {
     display: inline-block;
@@ -498,6 +526,9 @@
     border: 2px solid #000;
     margin-top: 10px;
     margin-bottom: 25px;
+  }
+  &__reset {
+    display: none;
   }
   &__text {
     color: $light;
@@ -528,7 +559,6 @@
     top: 0;
     left: 0;
     display: flex;
-    // align-items: center;
     justify-content: center;
     height: 100%;
     width: 100%;
